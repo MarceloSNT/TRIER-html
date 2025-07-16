@@ -1,26 +1,29 @@
 @charset "UTF-8";
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-header{
-    text-align: center;
-    padding: 3%;
-    background-color: #086788;
-    color: #f2f4f3 ;
-    border-bottom: 2px solid #f2f4f3;
+header {
+  text-align: center;
+  padding: 3%;
 }
-.conteiner{
-    background-color: #086788;
+.conteiner {
+  background-color: #086788;
 }
-.row{
-    padding:2%;
+.row {
+  padding: 2%;
 }
-.colunas{
-    padding: 1%;
+.colunas {
+  padding: 1%;
 }
-img{
-    height: 300px;
-    width: 100%;
+img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+button:hover {
+  border-radius: 25px;
+  transition: 0.5s;
 }
