@@ -21,6 +21,7 @@ img {
 .btn-link:hover {
   color: white;
   background-color: blueviolet;
+  border-radius: 50px;
   transition: 0.5s;
 }
 .linkedin-btn-link {
@@ -33,5 +34,22 @@ img {
 .linkedin-btn-link:hover {
   color: white;
   background-color: blue;
+  border-radius: 50px;
+
   transition: 0.5s;
+}
+#botoes{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+@media (min-width:768px){
+  #botoes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
