@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversorTemperatura.css">
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <div class="container-fluid p-5">
+            <form>
+                <div class="input-group mb-4">
+                    <label for="" class="col-12 form-label text-center">Temperatura</label>
+                    <select id="temperatura" class="select-control col-12">
+                        <option value="number" id="temperaturaC">Celsius °C</option>
+                        <option value="number" id="temperaturaF">fahrenheit °F</option>
+                    </select>
+                    <span class="input-group-text col-2 rounded-start border border-primary text-center">°C</span>
+                <input id="temperatura" type="number" class="col-10 form-control rounded-end border border-primary">
+                </div>
+                <button class="btn btn-info d-grid col-3 mx-auto" onclick="converterTemperatura()">Converter</button>
+            </from>
+    </div>
+    <script src="conversorTemperatura.js"></script>
+</body>
+</html>

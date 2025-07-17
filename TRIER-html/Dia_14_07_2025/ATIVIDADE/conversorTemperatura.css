@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.container-fluid{
+    color: white;
+    height: 100vh;
+    background-color: black;
+}
+button:hover{
+    border-radius: 15px;
+    transition: 0.5s;
+}
