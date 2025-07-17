@@ -14,18 +14,21 @@
 </head>
 <body>
     <div class="container-fluid p-5">
+        <div class="form-input-group ">
             <form>
-                <div class="input-group mb-4">
-                    <label for="" class="col-12 form-label text-center">Temperatura</label>
-                    <select id="temperatura" class="select-control col-12">
-                        <option value="number" id="temperaturaC">Celsius °C</option>
-                        <option value="number" id="temperaturaF">fahrenheit °F</option>
-                    </select>
-                    <span class="input-group-text col-2 rounded-start border border-primary text-center">°C</span>
-                <input id="temperatura" type="number" class="col-10 form-control rounded-end border border-primary">
-                </div>
-                <button class="btn btn-info d-grid col-3 mx-auto" onclick="converterTemperatura()">Converter</button>
-            </from>
+                        <label class="text-center col-12 text-primary">TEMPERATURA</label>
+                        <select class="col-2 d-grid" id="UnidadeTemperatura">
+                            <option value="">Escolha uma opção</option>
+                            <option value="celsius" class="form-control" id="temperaturaC">
+                                Celsius °C
+                            </option>
+                            <option value="fahrenheit" class="form-control" id="temperaturaF">
+                                Fahrenheit  °F
+                            </option>
+                        </select>
+                        <input type="text" class="col-12" id="inputTemperatura">
+                        <button class="btn btn-primary" onclick="selecionarUnidade()">Converter</button>
+                    </div>
     </div>
     <script src="conversorTemperatura.js"></script>
 </body>
