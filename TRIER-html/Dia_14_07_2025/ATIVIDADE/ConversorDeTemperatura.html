@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="conversorTemperatura.css">
-<link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="conversorTemperatura.css" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
     <title>Conversor de Temperatura</title>
-</head>
-<body>
-    <div class="container-fluid p-5">
-        <div class="form-input-group ">
-            <form>
-                        <label class="text-center col-12 text-primary">TEMPERATURA</label>
-                        <select class="col-2 d-grid" id="UnidadeTemperatura">
-                            <option value="">Escolha uma opção</option>
-                            <option value="celsius" class="form-control" id="temperaturaC">
-                                Celsius °C
-                            </option>
-                            <option value="fahrenheit" class="form-control" id="temperaturaF">
-                                Fahrenheit  °F
-                            </option>
-                        </select>
-                        <input type="text" class="col-12" id="inputTemperatura">
-                        <button class="btn btn-primary" onclick="selecionarUnidade()">Converter</button>
-                    </div>
+  </head>
+  <body>
+    <div class="container-fluid vh-100 p-5 bg-dark text-light">
+      <form>
+        <h1 class="text-center text-primary">Conversor de Temperatura</h1>
+        <div class="input-group mb-3">
+          <label for="valueInput" class="col-12 text-center">Temperatura</label>
+          <input
+            type="number"
+            placeholder="Digite aqui a temperatura"
+            class="col-6 col-sm-10 col-md-10 border border-primary-subtle rounded-start-2"
+            id="valueInput"
+          />
+          <span class="input-group-text col-6 col-sm-2 col-md-2">
+            <select
+              id="valueSelect"
+              class="col-md-12 col-lg-12 border border-primary-subtle d-grid mx-auto"
+            >
+              <option value="" class="text-center col-12 col-md-12">
+                Escolha
+              </option>
+              <option
+                value="celsiusToFahrenheit"
+                class="text-center col-12 col-md-12"
+              >
+                °C -> °F
+              </option>
+              <option
+                value="fahrenheitToCelsius"
+                class="text-center col-12 col-md-12"
+              >
+                °F -> °C
+              </option>
+            </select>
+          </span>
+        </div>
+        <button
+          class="btn btn-primary d-grid mx-auto"
+          onclick="converterTemperatura()"
+        >
+          Converter
+        </button>
+      </form>
     </div>
     <script src="conversorTemperatura.js"></script>
-</body>
+  </body>
 </html>

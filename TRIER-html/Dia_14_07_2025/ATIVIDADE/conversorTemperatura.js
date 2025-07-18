@@ -1,32 +1,15 @@
-/*function converterTemperaturaC(){
-    const temperaturaC = Number (document.getElementById("temperaturaC").value);
-
-    const convertidoC = (temperaturaC * 9/5) + 32;
-    window.alert(parseFloat("Temperatura convertida para Fahrenheit: °F "+convertidoC));
-}
-function converterTemperaturaF(){
-    const temperaturaF = Number(document.getElementById("temperaturaF").value);
-
-    const convertidoF = (temperaturaF-32)/1.8;
-     window.alert(parseFloat("Temperatura convertida para Fahrenheit: °F "+convertidoF));
-}*/
-function selecionarUnidade() {
-  const select = document.getElementById("UnidadeTemperatura");
-  const input = document.getElementById("inputTemperatura");
-  const unidadeEscolhida = select.valeu;
-
-  if (unidadeEscolhida.equal("celsius")) {
-    const Celsius = (input * 9) / 5 + 32;
-
+function converterTemperatura() {
+  const inputValor = parseFloat(document.getElementById("valueInput").value);
+  const selectValor = document.getElementById("valueSelect").value;
+  if (selectValor === "" || NaN) {
     window.alert(
-      parseFloat("Temperatura convertida para Fahrenheit: °F " + Celsius)
+      "!!! Valor inválido !!! \nSelecione uma unidade e digite uma temperatura"
     );
-  }
-  if (unidadeEscolhida == "fahrenheit") {
-    const Fahrenheit = (input - 32) / 1.8;
-
-    window.alert(
-      parseFloat("Temperatura convertida para Fahrenheit: °F " + Fahrenheit)
-    );
+  } else if (selectValor === "celsiusToFahrenheit") {
+    const resultadoC = (inputValor * 9) / 5 + 32;
+    window.alert("Convertido de Celsius para °F " + resultadoC);
+  } else if (selectValor === "fahrenheitToCelsius") {
+    const resultadoF = (inputValor - 32) / 1.8;
+    window.alert("Convertido de Fahrenheit para °C " + resultadoF);
   }
 }
