@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  height: 10%;
+  padding: 3%;
+  background-color: darkgrey;
+  color: black;
+  text-align: center;
+  color: black;
+}
+th{
+  background-color: black;
+  color: whitesmoke;
+  padding: 0.5%;
+  border: 2px solid black;
+}
+table{
+  background-color: gray;
+  border: 2px solid black;
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+}
+td{
+  border: 2px solid black;
+}
+tr:nth-child(1n){
+  background-color:steelblue;
+}
+tr:nth-child(2n){
+  background-color: white;
+}
