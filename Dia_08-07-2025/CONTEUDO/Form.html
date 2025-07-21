@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form >
+        <label>CPF</label>
+        <input 
+        type="text"
+        pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}\"
+        placeholder="000.000.000-00"
+        />
+
+        <label>Nome:</label>
+        <input 
+        type="email"
+        name="email"
+        required
+        placeholder="exemplo@email.com"
+        />
+        
+        <label>CEP:</label>
+        <input 
+        type="text"
+        name="cep"
+        placeholder="Digite um CEP válido"
+        />
+
+        <label>Estado</label>
+        <select name="estado" required>
+            <option value="">Escolha</option>
+            <option value="">AL</option>
+            <option value="">SC</option>
+            <option value="">RO</option>
+            <option value="">PR</option>
+            <option value="">AC</option>
+    </select>
+
+    <label>Mensagem</label>
+    <textarea 
+    name="mensagem"
+    rows="3"
+    placeholder="Digite uma mensagem..."
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
