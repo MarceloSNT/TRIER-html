@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de cliente com LocalStorage</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <h2>Cadastro de cliente</h2>
+    <form id="form-clientes">
+        <input 
+        type="text" 
+        id="nome" 
+        placeholder="Digite o nome" 
+        required>
+
+        <input 
+        type="email" 
+        id="email" 
+        placeholder="exemplo123@gmail.com" required>
+        
+        <button type="submit"> Cadastrar </button>
+    </form>
+    <h3>Lista de clientes</h3>
+    <div class="cliente" id="lista-clientes">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

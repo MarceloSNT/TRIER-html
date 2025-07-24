@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: darkgray;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+form{
+    height: 100%;
+    padding: 5%;
+    margin: 0% 25%;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: gray;
+}
+input{
+    padding: 1%;
+    margin: 2% 0%;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+button{
+    margin-top: 5%;
+    width: 50%;
+    padding: 1%;
+    border: 2px solid black;
+    background-color: black;
+    color: whitesmoke;
+}
+button:hover{
+    border-radius: 50px;
+    border: 2px solid darkgreen;
+    background-color: lightgreen;
+    color: darkgreen;
+    transition: 0.7s;
+}
+.cliente{
+    padding: 1%;
+    border-radius: 15px;
+    border: 2px solid black;
+    height: 100%;
+    margin: 0% 15%;
+}
+h2,h3{
+    margin-top: 3%;
+}
