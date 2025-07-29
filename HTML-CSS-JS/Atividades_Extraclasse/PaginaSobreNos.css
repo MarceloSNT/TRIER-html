@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+img{
+    height: 150px;
+    width: 160px;
+    border-radius: 50%;
+}
