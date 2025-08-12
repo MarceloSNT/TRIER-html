@@ -36,3 +36,35 @@ footer{
     color: white;
     text-align: center;
 }
+
+@media screen and (min-width: 800px) {
+    section{
+        width: 100%;
+        height: 100%;
+    }
+    section img{
+        width: 100%;
+        height: 100vh;
+    }
+    footer{
+        height: 5vh;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    section{
+        width: 100%;
+        height: 80vh;
+    }
+    section img{
+        width: 100%;
+        height: auto;
+    }
+    section p{
+        margin: 2% 3%;
+    }
+    footer{
+        height: 5vh;
+    }
+}
