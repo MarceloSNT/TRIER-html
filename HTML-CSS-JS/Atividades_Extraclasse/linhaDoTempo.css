@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#cards1::before{
+    content: "Isaac Newton descobre a gravidade";
+}
+#cards2::before{
+    content: "Declaração de Independência dos EUA";
+}
+#cards3::before{
+    content: "Assassinato do Arquiduque Franz Ferdinand";
+}
+#cards4::before{
+    content: "Quebra da Bolsa de Valores de Wall Street (Black Tuesday)";
+}
+#cards5::before{
+    content: "Pandemia de COVID-19";
+}
+
+.card:hover{
+    translate: 4px -5px;
+    background-color: #0D6EFD !important;
+    color: whitesmoke !important;
+    transition: 0.5s;
+}
