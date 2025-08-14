@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+button:hover{
+    translate: 4px -5px;
+    border-radius: 50px;
+    box-shadow: -4px 5px 10px rgba(0, 0, 0, 0.315);
+    transition: 0.5s;
+}
+input:focus{
+    background: linear-gradient(to right, #0D6EFD,#0848a7 );
+    transition: 0.5s;
+}

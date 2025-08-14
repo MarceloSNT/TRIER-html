@@ -32,7 +32,7 @@ function listarFuncionarios() {
   funcionarios.forEach((funcionario) => {
     const div = document.createElement("div");
     div.className = "mostrarFuncionarios";
-    div.innerHTML = `<strong>${funcionario.nome}</strong><br>Cargo: ${funcionario.cargo}<br>Departamento: ${funcionario.departamento}<br>Salário: ${funcionario.salario}<br><p></p>`;
+    div.innerHTML = `<strong>${funcionario.nome}</strong><br><p>Departamento: ${funcionario.departamento}<br></p><p>Salário: ${funcionario.salario}<br></p>`;
     container.appendChild(div);
   });
 }
